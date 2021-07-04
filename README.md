@@ -8,4 +8,4 @@
 * 할일이 많다...
 
 ## about mongo cloud
-* add accessible IPs on https://cloud.mongodb.com/pikachom (manual)
+* add accessible IPs on https://cloud.mongodb.com/ (manual)
