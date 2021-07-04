@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    volumes:
+      - type: bind
+        source: ./data/db # host os(local)에서 바인딩할 경로
+        target: /data/db  # container 내부에서의 경로
+    container_name: "mongodb"
+    ports:
+      - "27017:27017"
