@@ -1,0 +1,4 @@
+
+server.port=8081
+mongodb.database=test
+mongodb.connection.string=mongodb+srv://{$$$$$ID$$$$$$$}:{$$$$$$PW$$$$}@pikachom.33qtm.mongodb.net/Test?retryWrites=true&w=majority
