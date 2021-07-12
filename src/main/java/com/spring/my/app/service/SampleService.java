@@ -1,4 +1,11 @@
 package com.spring.my.app.service;
 
-public class SampleService {
+
+import com.spring.my.app.document.Sample;
+
+import java.util.List;
+
+public interface SampleService {
+    public List<Sample> getSampleList();
+
 }
