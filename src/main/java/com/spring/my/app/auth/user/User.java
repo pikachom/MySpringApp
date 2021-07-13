@@ -1,4 +1,4 @@
-package com.spring.my.app.user;
+package com.spring.my.app.auth.user;
 
 import lombok.*;
 

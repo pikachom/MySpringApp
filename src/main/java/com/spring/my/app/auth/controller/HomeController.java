@@ -1,5 +1,6 @@
-package com.spring.my.app.auth;
+package com.spring.my.app.auth.controller;
 
+import com.spring.my.app.auth.notdecided.SessionUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

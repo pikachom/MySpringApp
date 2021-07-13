@@ -1,13 +1,12 @@
-package com.spring.my.app.auth;
+package com.spring.my.app.auth.service;
 
-import com.spring.my.app.user.User;
-import com.spring.my.app.user.UserRepository;
+import com.spring.my.app.auth.notdecided.OAuthAttributes;
+import com.spring.my.app.auth.notdecided.SessionUser;
+import com.spring.my.app.auth.user.User;
+import com.spring.my.app.auth.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
@@ -16,7 +15,6 @@ import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpSession;
-import java.util.Collection;
 import java.util.Collections;
 
 // OAuth2UserService<R extends OAuth2UserRequest, U extends OAuth2User>

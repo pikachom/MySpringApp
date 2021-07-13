@@ -1,7 +1,7 @@
-package com.spring.my.app.auth;
+package com.spring.my.app.auth.notdecided;
 
-import com.spring.my.app.user.Role;
-import com.spring.my.app.user.User;
+import com.spring.my.app.auth.user.Role;
+import com.spring.my.app.auth.user.User;
 import lombok.Builder;
 import lombok.Getter;
 

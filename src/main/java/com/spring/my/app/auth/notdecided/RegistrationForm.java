@@ -1,11 +1,9 @@
-package com.spring.my.app.auth;
+package com.spring.my.app.auth.notdecided;
 
-import com.spring.my.app.user.Role;
-import com.spring.my.app.user.User;
+import com.spring.my.app.auth.user.Role;
+import com.spring.my.app.auth.user.User;
 import lombok.Data;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
-import javax.persistence.*;
 
 @Data
 public class RegistrationForm {

@@ -1,10 +1,8 @@
-package com.spring.my.app.service;
+package com.spring.my.app.api.service;
 
-import com.spring.my.app.document.Sample;
-import com.spring.my.app.repository.SampleRepository;
-import lombok.RequiredArgsConstructor;
+import com.spring.my.app.api.document.Sample;
+import com.spring.my.app.api.repository.SampleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.spring.my.app.repository;
+package com.spring.my.app.api.repository;
 
-import com.spring.my.app.document.Sample;
+import com.spring.my.app.api.document.Sample;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

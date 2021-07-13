@@ -1,6 +1,7 @@
-package com.spring.my.app.auth;
+package com.spring.my.app.auth.config;
 
-import com.spring.my.app.user.Role;
+import com.spring.my.app.auth.service.CustomOAuth2UserService;
+import com.spring.my.app.auth.user.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -32,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //"/", "/css/**", "/images/**",
                 //                        "/js/**", "/h2-console/**", "/login-own", "/register"
                 .authorizeRequests()//URL별 권한 관리를 설정하는 옵션의 시작점
-                .antMatchers("/", "/register", "/login-own").permitAll() //해당 url은 모두가 열람가능
+                .antMatchers("/", "/register", "/login-own", "/sample").permitAll() //해당 url은 모두가 열람가능
                 .antMatchers("/posts")
                 .hasRole(Role.USER.name()) // api/v1 이하의 url은 user만 권한이 있음
                 .antMatchers("/admin")

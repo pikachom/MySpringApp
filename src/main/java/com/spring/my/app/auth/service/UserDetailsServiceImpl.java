@@ -1,7 +1,7 @@
-package com.spring.my.app.auth;
+package com.spring.my.app.auth.service;
 
-import com.spring.my.app.user.User;
-import com.spring.my.app.user.UserRepository;
+import com.spring.my.app.auth.notdecided.UserDetailsImpl;
+import com.spring.my.app.auth.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

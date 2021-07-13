@@ -1,6 +1,6 @@
-package com.spring.my.app.auth;
+package com.spring.my.app.auth.notdecided;
 
-import com.spring.my.app.user.User;
+import com.spring.my.app.auth.user.User;
 import lombok.Getter;
 
 import java.io.Serializable;

@@ -1,10 +1,9 @@
-package com.spring.my.app.controller;
+package com.spring.my.app.api.controller;
 
-import com.spring.my.app.document.Sample;
-import com.spring.my.app.service.SampleService;
+import com.spring.my.app.api.document.Sample;
+import com.spring.my.app.api.service.SampleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
