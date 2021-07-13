@@ -1,4 +1,4 @@
-//package com.spring.my.app.config;
+//package com.spring.my.app.auth.config;
 //
 //import com.mongodb.ConnectionString;
 //import com.mongodb.MongoClientSettings;
@@ -20,7 +20,7 @@
 //
 //
 //@Configuration
-//@EnableMongoRepositories(basePackages="com.spring.my.app.repository")
+//@EnableMongoRepositories(basePackages="com.spring.my.app.api.repository")
 //public class ApplicationConfig extends AbstractMongoClientConfiguration {
 //
 //    @Autowired

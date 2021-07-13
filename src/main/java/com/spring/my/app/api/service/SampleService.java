@@ -1,7 +1,7 @@
-package com.spring.my.app.service;
+package com.spring.my.app.api.service;
 
 
-import com.spring.my.app.document.Sample;
+import com.spring.my.app.api.document.Sample;
 
 import java.util.List;
 
