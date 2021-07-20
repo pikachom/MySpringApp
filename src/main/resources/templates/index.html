@@ -1,21 +1,18 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>스프링 부트 웹서비스</title>
+    <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 </head>
-<body>
-<h1>스프링 부트로 시작하는 웹 서비스</h1>
-<div class="col-md-12">
-    <!--로그인 기능 영역-->
-    <div class="row">
-        <div class="col-md-6">
-            <a th:href='@{/login-own}'>로그인</a>
-            <a th:href='@{/register}'>회원가입</a>
-            <a href="/oauth2/authorization/google">구글 계정으로 로그인</a>
-        </div>
 
+<body>
+<h1>Home</h1>
+<div class="col-md-12">
+    <div class="col-md-6">
+<!--        <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">구글 계정으로 로그인</a>-->
+        <a th:href="@{/register}">회원가입</a>
+        <a th:href="@{/login-own}">로그인</a>
+        <a th:href="@{/customlogin}">로오그인</a>
     </div>
 </div>
 </body>
