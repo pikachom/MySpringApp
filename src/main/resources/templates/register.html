@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>T스프링 부트 웹 서비스 회원가입</title>
+    <title>회원가입</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
 <body>
-<h1>회원가입</h1>
-<form method="POST" th:action="@{/register}" id="registerForm">
+<h1>Register</h1>
+<form method="POST" th:action="@{/api/signup}" id="userDto">
 
-    <label for="email">이메일: </label>
-    <input type="text" name="email" /><br />
+    <label for="username">email: </label>
+    <input type="text" name="username" /><br />
 
-    <label for="password">비밀번호: </label>
+    <label for="password">password: </label>
     <input type="password" name="password" /><br />
 
-    <label for="name">이름: </label>
-    <input type="text" name="name" /><br />
+    <label for="nickname">name: </label>
+    <input type="text" name="nickname" /><br />
 
     <input type="submit" value="회원가입" />
 </form>
