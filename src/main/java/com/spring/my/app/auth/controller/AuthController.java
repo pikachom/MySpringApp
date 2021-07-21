@@ -1,9 +1,9 @@
-package com.spring.my.app.controller;
+package com.spring.my.app.auth.controller;
 
 import com.spring.my.app.auth.jwt.JwtFilter;
 import com.spring.my.app.auth.jwt.TokenProvider;
-import com.spring.my.app.dto.LoginDto;
-import com.spring.my.app.dto.TokenDto;
+import com.spring.my.app.auth.dto.LoginDto;
+import com.spring.my.app.auth.dto.TokenDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;

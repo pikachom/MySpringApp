@@ -1,7 +1,7 @@
-package com.spring.my.app.service;
+package com.spring.my.app.auth.service;
 
-import com.spring.my.app.entity.User;
-import com.spring.my.app.repository.UserRepository;
+import com.spring.my.app.auth.entity.User;
+import com.spring.my.app.auth.repository.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,7 +1,7 @@
-package com.spring.my.app.repository;
+package com.spring.my.app.auth.repository;
 
 
-import com.spring.my.app.entity.User;
+import com.spring.my.app.auth.entity.User;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 
