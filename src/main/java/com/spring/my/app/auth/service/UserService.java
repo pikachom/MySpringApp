@@ -1,10 +1,10 @@
-package com.spring.my.app.service;
+package com.spring.my.app.auth.service;
 
 import com.spring.my.app.auth.util.SecurityUtil;
-import com.spring.my.app.dto.UserDto;
-import com.spring.my.app.entity.Authority;
-import com.spring.my.app.entity.User;
-import com.spring.my.app.repository.UserRepository;
+import com.spring.my.app.auth.dto.UserDto;
+import com.spring.my.app.auth.entity.Authority;
+import com.spring.my.app.auth.entity.User;
+import com.spring.my.app.auth.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

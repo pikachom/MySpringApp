@@ -1,4 +1,4 @@
-package com.spring.my.app.entity;
+package com.spring.my.app.auth.entity;
 
 import lombok.*;
 

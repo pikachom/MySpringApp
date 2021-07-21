@@ -1,8 +1,8 @@
-package com.spring.my.app.controller;
+package com.spring.my.app.auth.controller;
 
-import com.spring.my.app.dto.UserDto;
-import com.spring.my.app.entity.User;
-import com.spring.my.app.service.UserService;
+import com.spring.my.app.auth.dto.UserDto;
+import com.spring.my.app.auth.entity.User;
+import com.spring.my.app.auth.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

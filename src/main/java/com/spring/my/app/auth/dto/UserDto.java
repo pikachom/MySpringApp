@@ -1,4 +1,4 @@
-package com.spring.my.app.dto;
+package com.spring.my.app.auth.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
