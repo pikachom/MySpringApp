@@ -17,13 +17,21 @@ public class PostingService {
     @Autowired
     private PostingRepository postingRepository;
 
+    @Autowired
+    private SequenceGeneratorService sequenceGeneratorService;
+
     public List<Posting> getAllPosting(){
         return postingRepository.findAll();
     }
-    public Posting getPosting(String _id){
-        return postingRepository.findById(_id).orElseThrow();
+    public Posting getPosting(String id){
+        return postingRepository.findById(Long.valueOf(id)).orElseThrow();
     }
     public Posting insertPosting(Posting posting){
-        return postingRepository.insert(posting);
+        log.info(posting.toString());
+        Long seqval = sequenceGeneratorService.generateSequence(Posting.SEQUENCE_NAME);
+        log.info("sequence is {}", seqval);
+        posting.setId(seqval);
+        log.info(posting.toString());
+        return postingRepository.save(posting);
     }
 }

@@ -5,8 +5,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document("posting_sequence")
-public class PostingSequence {
+@Document("db_sequence")
+public class DbSequence {
+
     @Id
     private String id;
     private Long seq;

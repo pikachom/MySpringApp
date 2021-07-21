@@ -14,21 +14,21 @@ public class Posting {
     public static final String SEQUENCE_NAME = "posting_sequence";
 
     @Id
-    private Long _id;
+    private Long id;
     private String title;
     private String content;
     private String author;
     private String created;
 
-    @Builder
-    public Posting(String title, String content, String author){
-        this.title = title;
-        this.content = content;
-        this.author = author;
-    }
-    public void update(String title, String content){
-        this.title = title;
-        this.content = content;
-    }
+//    @Builder
+//    public Posting(String title, String content, String author){
+//        this.title = title;
+//        this.content = content;
+//        this.author = author;
+//    }
+//    public void update(String title, String content){
+//        this.title = title;
+//        this.content = content;
+//    }
 
 }
