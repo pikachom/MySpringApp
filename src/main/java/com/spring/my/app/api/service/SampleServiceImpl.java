@@ -18,9 +18,6 @@ public class SampleServiceImpl implements SampleService{
     @Autowired
     private SampleRepository sampleRepository;
 
-
-
-
     public List<Sample> getSampleList(){
         List<Sample> sampleList = sampleRepository.findAll();
         return sampleList;
