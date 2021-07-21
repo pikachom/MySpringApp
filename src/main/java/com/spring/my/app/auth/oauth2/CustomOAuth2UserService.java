@@ -1,8 +1,8 @@
 package com.spring.my.app.auth.oauth2;
 
-import com.spring.my.app.entity.Authority;
-import com.spring.my.app.entity.User;
-import com.spring.my.app.repository.UserRepository;
+import com.spring.my.app.auth.entity.Authority;
+import com.spring.my.app.auth.entity.User;
+import com.spring.my.app.auth.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
