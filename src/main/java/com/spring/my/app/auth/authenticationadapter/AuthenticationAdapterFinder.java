@@ -7,6 +7,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 public class AuthenticationAdapterFinder {
+
     private final List<AuthenticationAdapter> adapterList;
 
     public AuthenticationAdapter findAdapter(Authentication authentication){
@@ -16,4 +17,5 @@ public class AuthenticationAdapterFinder {
         }
         return null;
     }
+
 }

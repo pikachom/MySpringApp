@@ -23,6 +23,7 @@ public class PostingController {
 
     @GetMapping
     List<Posting> getAllSampleList(){
+        System.out.println("!!!");
         return postingService.getAllPosting();
     }
     @PostMapping

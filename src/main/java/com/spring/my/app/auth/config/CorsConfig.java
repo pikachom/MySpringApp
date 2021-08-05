@@ -13,13 +13,12 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:3000");
-        config.addAllowedHeader("*");
-        config.addAllowedMethod("*");
-
-        source.registerCorsConfiguration("/**", config);
-        return new CorsFilter(source);
+        config.setAllowCredentials(true);                           //Fetch API 생성자의Request()의 credentials 옵션 사용을 허용
+        config.addAllowedOrigin("http://localhost:3000");           //허용하는 Origin
+        config.addAllowedHeader("*");                               //허용하는 헤더
+        config.addAllowedMethod("*");                               //허용하는 메소드
+        source.registerCorsConfiguration("/**", config);    //CorsConfiguration을 UrlBasedCorsConfigurationSource에 등록
+        return new CorsFilter(source);                              //UrlBasedCorsConfigurationSource을 인자로 CorsFilter 생성
     }
 
 }

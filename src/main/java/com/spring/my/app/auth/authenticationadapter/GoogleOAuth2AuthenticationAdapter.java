@@ -5,6 +5,7 @@ import org.springframework.security.oauth2.client.authentication.OAuth2Authentic
 
 
 public class GoogleOAuth2AuthenticationAdapter implements AuthenticationAdapter{
+
     @Override
     public boolean supports(Authentication authentication) {
         if(authentication.getClass() != OAuth2AuthenticationToken.class)
@@ -16,4 +17,5 @@ public class GoogleOAuth2AuthenticationAdapter implements AuthenticationAdapter{
     public AdaptedAuthentication adaptAuthentication(Authentication authentication) {
         return new AdaptedAuthentication((String)((OAuth2AuthenticationToken)authentication).getPrincipal().getAttributes().get("email"), authentication.getAuthorities());
     }
+
 }

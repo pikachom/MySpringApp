@@ -26,6 +26,7 @@ import java.io.IOException;
 @RequestMapping("/api")
 @Slf4j
 public class AuthController {
+
     private final TokenProvider tokenProvider;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
     private final AuthenticationSuccessHandler authenticationSuccessHandler;
@@ -57,6 +58,7 @@ public class AuthController {
 
     @GetMapping("/signout")
     public ResponseEntity<TokenDto> signOut(@RequestHeader HttpHeaders httpHeaders) {
+
         log.info(httpHeaders.get(JwtFilter.AUTHORIZATION_HEADER).toString());
         httpHeaders.remove(JwtFilter.AUTHORIZATION_HEADER);
 

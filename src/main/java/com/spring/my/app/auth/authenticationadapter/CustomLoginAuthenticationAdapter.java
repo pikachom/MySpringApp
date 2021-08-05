@@ -7,6 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import java.util.stream.Collectors;
 
 public class CustomLoginAuthenticationAdapter implements AuthenticationAdapter{
+
     @Override
     public boolean supports(Authentication authentication) {
         return authentication.getClass() == UsernamePasswordAuthenticationToken.class;
@@ -16,4 +17,5 @@ public class CustomLoginAuthenticationAdapter implements AuthenticationAdapter{
     public AdaptedAuthentication adaptAuthentication(Authentication authentication) {
         return new AdaptedAuthentication(authentication.getName(), authentication.getAuthorities());
     }
+
 }
