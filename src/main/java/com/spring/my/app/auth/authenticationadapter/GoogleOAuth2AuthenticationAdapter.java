@@ -3,7 +3,6 @@ package com.spring.my.app.auth.authenticationadapter;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 
-
 public class GoogleOAuth2AuthenticationAdapter implements AuthenticationAdapter{
 
     @Override

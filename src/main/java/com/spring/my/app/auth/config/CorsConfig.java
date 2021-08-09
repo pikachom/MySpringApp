@@ -6,6 +6,8 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+//Cors 관련 설정은 CorsFilter를 SecurityConfig에서 .addFilterBefore(corsFilter, UsernamePasswordAuthenticationFilter.class)로 필터를 적용하는 방법이 있고
+//SecurityConfig에서 corsConfigurationSource빈을 이용할 수 있다.
 @Configuration
 public class CorsConfig {
 

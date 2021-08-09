@@ -31,6 +31,7 @@ public class OAuth2Attributes {
         return ofGoogle(userNameAttributeName, attributes);
     }
 
+    //Oauth provider가 Google인 경우에 OAuth2Attributes 생성
     private static OAuth2Attributes ofGoogle(String userNameAttributeName,
                                              Map<String, Object> attributes) {
         return OAuth2Attributes.builder()

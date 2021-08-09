@@ -9,6 +9,7 @@ import java.util.List;
 @Configuration
 public class AuthenticationAdapterConfig {
 
+    //AuthenticationAdapterFinder에 adapterList을 생성자로 주입
     @Bean
     public AuthenticationAdapterFinder authenticationAdapterFinder(){
         List<AuthenticationAdapter> authenticationAdapterList = new ArrayList<>();

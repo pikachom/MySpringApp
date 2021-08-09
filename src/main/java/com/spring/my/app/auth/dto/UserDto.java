@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+//사용자의 정보에 대한 dto
 public class UserDto {
 
     @NotNull

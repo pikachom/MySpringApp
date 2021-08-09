@@ -10,6 +10,7 @@ public class AuthenticationAdapterFinder {
 
     private final List<AuthenticationAdapter> adapterList;
 
+    //adapterList내의 모든 AuthenticationAdapter을 돌면서 authenticationAdapter을 찾아줌
     public AuthenticationAdapter findAdapter(Authentication authentication){
         for(AuthenticationAdapter authenticationAdapter: adapterList){
             if(authenticationAdapter.supports(authentication))
